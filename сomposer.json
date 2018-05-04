@@ -1,0 +1,8 @@
+{
+    "name": "hideaki/table",
+    "description": "A short description of what your package does",
+    "require": {
+        "php": "^7.0",
+        "another-vendor/package": "1.*"
+    }
+}
