@@ -1,6 +1,7 @@
 {
     "name": "hideaki/table",
     "description": "A short description of what your package does",
+    "version": "1.0.0",
     "require": {
         "php": "^5.3.3 || ^7.0"
     }
