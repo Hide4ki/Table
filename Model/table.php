@@ -1,7 +1,7 @@
 <?php
   namespace Model;
  
-	class table
+	class Table
   {
     public $stringAttribute = '';
     public $columns = [];
