@@ -22,17 +22,22 @@
       $table = new table('table1');
       $Render = new Render;
       $table->addRows([
-              ['Mike',  10000, true],
-              ['Jim',   8000,  true],
-              ['Alice', 11250, false],
-              ['Bob',  7000,   true]
-            ])
-            ->setSort()
-            ->setStyle('table_blur')
-            ->setAttr([['align','center']])
-            ->addColumn('string', 'Name')
-            ->addColumn('number', 'Salary')
-            ->addColumn('boolean', 'Full Time Employee');
+          ['Артем', 72, 38, 98, 92, 71, 39, false],
+          ['Марк',   24, 11, 27, 15, 33, 39,  true],
+          ['Радислав', 92, 70, 38, 77, 45, 37, false],
+          ['Саша',  11, 24, 5, 90, 56, 87,   false],
+          ['Юра',  19, 3, 1, 98, 93, 11,   false]])
+        ->setSort()
+        ->setStyle('table_blur')
+        ->setAttr([['align','center']])
+        ->addColumn('string', 'Имя')
+        ->addColumn('number', 'Не нужные цифры')
+        ->addColumn('number', 'Не нужные цифры')
+        ->addColumn('number', 'Не нужные цифры')
+        ->addColumn('number', 'Не нужные цифры')
+        ->addColumn('number', 'Не нужные цифры')
+        ->addColumn('number', 'Не нужные цифры')
+        ->addColumn('boolean', 'Сдал экзамен');
       $Render->drawTable($table);
     ?>  
   </body>
