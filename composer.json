@@ -5,7 +5,13 @@
     "require": {
         "php": "^5.3.3 || ^7.0"
     },
-    
+    "keywords": ["php", "table", "view", "html"],
+    "authors": [{
+		"name": "Artem Petrov",
+		"email": "neposeda99@list.ru",
+		"homepage": "https://vk.com/script_1",
+		"role": "Developer"
+    }],
     "autoload": {
         "psr-4": {"table\\": "/"}
     }
