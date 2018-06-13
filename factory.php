@@ -1,5 +1,5 @@
 <?php
-  namespace Tables;
+  namespace Table;
   use Table\Model\table as table;
   use Table\Model\Render as render;
   define('MAIN', __DIR__);
