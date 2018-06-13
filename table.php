@@ -1,5 +1,6 @@
 <?php
   namespace Table;
+  
   define('MAIN', __DIR__);
 	class Table
   {
