@@ -13,7 +13,7 @@
 		"role": "Developer"
     }],
     "autoload": {
-        "psr-4": {"table\\": "/"}
+        "psr-4": {"TableHeader\\": "/"}
     }
 
 }
