@@ -9,34 +9,34 @@
     <?php
       use Model\table as table;
       use Model\Render as Render;
-      
       spl_autoload_register(
-        function($class)
-        {
-          $path = str_replace('\\', '/', $class) . '.php';
-          
-          if (file_exists($path))
-            include_once $path;
+        function($class) 
+        { 
+          $path = __DIR__ . '/' . strtolower(str_replace('\\', '/', $class)) . '.php'; 
+          if (file_exists($path)) 
+          { 
+            require_once $path; 
+          } 
+          else 
+          { 
+            echo $path; 
+          } 
         }
-      );
+      ); 
+      define('MAIN', __DIR__);
       $table = new table('table1');
       $Render = new Render;
       $table->addRows([
-          ['Артем', 72, 38, 98, 92, 71, 39, false],
-          ['Марк',   24, 11, 27, 15, 33, 39,  true],
-          ['Радислав', 92, 70, 38, 77, 45, 37, false],
-          ['Саша',  11, 24, 5, 90, 56, 87,   false],
-          ['Юра',  19, 3, 1, 98, 93, 11,   false]])
+          ['Артем',   32,  true],
+          ['Марк',    45,  true],
+          ['Радислав', 56, false],
+          ['Саша',    67,  true],
+          ['Юра',     78,  true]])
         ->setSort()
         ->setStyle('table_blur')
         ->setAttr([['align','center']])
         ->addColumn('string', 'Имя')
-        ->addColumn('number', 'Не нужные цифры')
-        ->addColumn('number', 'Не нужные цифры')
-        ->addColumn('number', 'Не нужные цифры')
-        ->addColumn('number', 'Не нужные цифры')
-        ->addColumn('number', 'Не нужные цифры')
-        ->addColumn('number', 'Не нужные цифры')
+        ->addColumn('number', 'НЕ понтно че')
         ->addColumn('boolean', 'Сдал экзамен');
       $Render->drawTable($table);
     ?>  

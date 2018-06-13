@@ -5,8 +5,8 @@
   {
     public function drawTable($obj)
     {
-      include_once $_SERVER['DOCUMENT_ROOT'] . '/Table/pattern/main/main.php';
-      include_once $_SERVER['DOCUMENT_ROOT'] . '/Table/pattern/sort/jsSort.js';
+      include_once MAIN . '/pattern/main/main.php';
+      include_once MAIN . '/pattern/sort/jsSort.js';
     }
   }
 ?>
