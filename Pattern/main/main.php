@@ -7,7 +7,7 @@
       <?php endforeach; ?>
     </tr>
   </thead>
-  <tbody>
+  <tbody id="tbody-<?= $obj->name ?>">
     <?php foreach ($obj->rows as $key => $cell): ?>
       <tr>
         <td><?= $key ?></td>
