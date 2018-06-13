@@ -1,5 +1,5 @@
 <?php
-  namespace Model;
+  namespace Table\Model;
   
   class Render
   {

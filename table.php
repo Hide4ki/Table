@@ -1,6 +1,6 @@
 <?php
-  namespace Model;
- 
+  namespace Table;
+  define('MAIN', __DIR__);
 	class Table
   {
     public $stringAttribute = '';
