@@ -1,5 +1,5 @@
 <?php
-  namespace Table;
+  namespace Tables\Model;
   
   define('MAIN', __DIR__);
 	class Table
