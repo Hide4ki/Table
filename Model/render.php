@@ -7,7 +7,7 @@
     public function drawTable($obj)
     {
       include MAIN . '/pattern/main/main.php';
-      include MAIN . '/pattern/sort/jsSort.js';
+      if ($obj->sort === true) include MAIN . '/pattern/sort/jsSort.js';
     }
   }
 ?>
