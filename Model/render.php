@@ -1,13 +1,12 @@
 <?php
-
-  namespace Table\Model;
-
+  namespace Model;
+  
   class Render
   {
     public function drawTable($obj)
     {
-      include MAIN . '/pattern/main/main.php';
-      if ($obj->sort === true) include MAIN . '/pattern/sort/jsSort.js';
+      include_once $_SERVER['DOCUMENT_ROOT'] . '/Table/pattern/main/main.php';
+      include_once $_SERVER['DOCUMENT_ROOT'] . '/Table/pattern/sort/jsSort.js';
     }
   }
 ?>

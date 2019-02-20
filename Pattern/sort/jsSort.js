@@ -5,18 +5,18 @@ var <?= $obj->name ?> = document.getElementById('<?= $obj->name ?>');
 {
   if (e.target.tagName != 'TH') return;
   if (e.target.getAttribute('data-sort')!='A')
-  { 
+  {
     e.target.setAttribute('data-sort','A');
-    sortGridA<?= $obj->name ?>(e.target.cellIndex, e.target.getAttribute('data-type'));
+    sortGridA(e.target.cellIndex, e.target.getAttribute('data-type'));
   }
   else
   {
     e.target.setAttribute('data-sort','B');
-    sortGridB<?= $obj->name ?>(e.target.cellIndex, e.target.getAttribute('data-type'));
+    sortGridB(e.target.cellIndex, e.target.getAttribute('data-type'));
   } 
 };
 
-function sortGridA<?= $obj->name ?>(colNum, type) 
+function sortGridA(colNum, type) 
 {
   var tbody = <?= $obj->name ?>.getElementsByTagName('tbody')[0];
   var rowsArray = [].slice.call(tbody.rows);
@@ -53,7 +53,7 @@ function sortGridA<?= $obj->name ?>(colNum, type)
 
 }
 
-function sortGridB<?= $obj->name ?>(colNum, type) 
+function sortGridB(colNum, type) 
 {
   var tbody = <?= $obj->name ?>.getElementsByTagName('tbody')[0];
   var rowsArray = [].slice.call(tbody.rows);
